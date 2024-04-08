@@ -1,4 +1,19 @@
+[![CI/CD Pipeline](https://github.com/saraduque1/laboratorio2-arqui-soft/actions/workflows/build.yml/badge.svg)](https://github.com/saraduque1/laboratorio2-arqui-soft/actions/workflows/build.yml)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=bugs)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=coverage)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=saraduque1_laboratorio2-arqui-soft&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=saraduque1_laboratorio2-arqui-soft)
+
 Implementation of a Simple App with the next operations:
+
 * Get random nations
 * Get random currencies
 * Get random Aircraft
