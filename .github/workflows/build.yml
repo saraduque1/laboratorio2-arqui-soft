@@ -108,3 +108,24 @@ jobs:
           name: artifact
           #From this path
           path: target/laboratorio2-0.0.1-SNAPSHOT.jar
+
+  #Deploy's job
+  deploy:
+    needs: build
+    name: Deploy to AWS EC2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-2 # Cambia esto a tu región de AWS
+
+      - name: Copy JAR to EC2
+        run: |
+          scp -o StrictHostKeyChecking=no -i /path/to/your/key.pem target/laboratorio2-0.0.1-SNAPSHOT.jar ec2-user@your-ec2-ip-address:/home/ec2-user/
+
+      - name: Run JAR on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no -i /path/to/your/key.pem ec2-user@your-ec2-ip-address "nohup java -jar /home/ec2-user/laboratorio2-0.0.1-SNAPSHOT.jar > output.log &"
